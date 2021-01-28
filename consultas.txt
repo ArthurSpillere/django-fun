@@ -1,6 +1,8 @@
--> todas os artigos de determinado reporter X
+-> todas os artigos de determinado reporter 
 ====================================================================
 p = Article.objects.filter(reporter_id = 1)
+Ou
+"P = Article.objects.filter(reporter__first_name = "Arthur").filter(reporter__last_name = "Cordeiro")"
 
 p
 <QuerySet [<Article: Django lets you build Web apps easily>, <Article: Testando isso aqui>]>
